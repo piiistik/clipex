@@ -5,3 +5,4 @@ dist/
 *.egg
 *.whl
 __pycache__/
+*NOTE*
