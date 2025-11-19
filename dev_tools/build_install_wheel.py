@@ -3,6 +3,7 @@ import glob
 import os
 from packaging.version import Version, InvalidVersion
 
+
 def build_and_install():
     # Step 1: Run build
     print("Building package...")
@@ -18,7 +19,7 @@ def build_and_install():
     def parse_version_from_filename(filename):
         # Example filename: clipex-0.0.1-py3-none-any.whl
         base = os.path.basename(filename)
-        parts = base.split('-')
+        parts = base.split("-")
         try:
             return Version(parts[1])
         except (IndexError, InvalidVersion):
@@ -28,11 +29,12 @@ def build_and_install():
     print(f"Latest wheel detected: {latest_wheel}")
 
     # Step 4: Install the latest wheel
-    subprocess.run([
-        "pip", "install", latest_wheel, "--force-reinstall", "--no-deps"
-    ], check=True)
+    subprocess.run(
+        ["pip", "install", latest_wheel, "--force-reinstall", "--no-deps"], check=True
+    )
 
     print("Installation complete.")
+
 
 if __name__ == "__main__":
     build_and_install()
