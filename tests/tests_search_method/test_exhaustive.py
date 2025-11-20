@@ -1,5 +1,6 @@
 from clipex.core.search_method.exhaustive import Exhaustive
 
+
 def test_exhaustive_single_variable():
     variable_ranges = [(0, 2)]
     exhaustive = Exhaustive(variable_ranges)
@@ -15,6 +16,7 @@ def test_exhaustive_single_variable():
     assert len(search_space) == len(expected_combinations)
     for combo in expected_combinations:
         assert combo in search_space
+
 
 def test_exhaustive_two_variables():
     variable_ranges = [(0, 1), (0, 2)]
@@ -34,7 +36,8 @@ def test_exhaustive_two_variables():
     assert len(search_space) == len(expected_combinations)
     for combo in expected_combinations:
         assert combo in search_space
-        
+
+
 def test_exhaustive_three_variables():
     variable_ranges = [(0, 1), (0, 1), (0, 1)]
     exhaustive = Exhaustive(variable_ranges)
@@ -55,7 +58,8 @@ def test_exhaustive_three_variables():
     assert len(search_space) == len(expected_combinations)
     for combo in expected_combinations:
         assert combo in search_space
-        
+
+
 def test_exhaustive_empty_ranges():
     variable_ranges = []
     exhaustive = Exhaustive(variable_ranges)
@@ -69,7 +73,8 @@ def test_exhaustive_empty_ranges():
     assert len(search_space) == len(expected_combinations)
     for combo in expected_combinations:
         assert combo in search_space
-        
+
+
 def test_exhaustive_incorrect_ranges():
     variable_ranges = [(5, 3)]  # Invalid range where low > high
     exhaustive = Exhaustive(variable_ranges)

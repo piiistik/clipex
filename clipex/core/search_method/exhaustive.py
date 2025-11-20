@@ -3,10 +3,11 @@ from itertools import product
 
 from clipex.core.search_method.search_method import SearchMethod, SearchSpace
 
+
 class Exhaustive(SearchMethod):
     def __init__(self, variable_ranges):
         super().__init__(variable_ranges)
-    
+
     def step(self, _) -> SearchSpace:
         """
         Generate all permutations of variable values within the specified ranges.
