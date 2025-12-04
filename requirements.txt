@@ -1,7 +1,0 @@
-# developer tools
-pytest
-black
-
-# dependencies
-kivy
-scipy
