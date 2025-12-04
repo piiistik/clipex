@@ -1,4 +1,4 @@
-from clipex.result_converter.result_saver import save_result
+from clipbench.result_converter.result_saver import save_result
 import os
 
 

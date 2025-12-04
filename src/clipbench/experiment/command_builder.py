@@ -22,7 +22,6 @@ class CommandBuilder:
         variable_index = 0
         for part in self._command:
             if part == VARIABLE_PLACEHOLDER:
-                print(self._command)
                 built_command.append(variables[variable_index])
                 variable_index += 1
             else:

@@ -1,10 +1,10 @@
 from typing import List
 
-from clipex.experiment_converter.parser import parse_xml, Static, Dynamic, Parts
-from clipex.experiment.experiment import Experiment
-from clipex.experiment.command_builder import CommandBuilder
-from clipex.experiment.variable_handler import VariableHandler
-from clipex.experiment.variable.variable import Variable
+from clipbench.experiment_converter.parser import parse_xml, Static, Dynamic, Parts
+from clipbench.experiment.experiment import Experiment
+from clipbench.experiment.command_builder import CommandBuilder
+from clipbench.experiment.variable_handler import VariableHandler
+from clipbench.experiment.variable.variable import Variable
 
 
 def provide_experiment(xml_path: str) -> Experiment:

@@ -1,10 +1,10 @@
-from clipex.core.search_method.grid_sample import GridSearchMethod
-from clipex.experiment.experiment import Experiment
-from clipex.core.evaluator import Evaluator
-from clipex.experiment.command_builder import CommandBuilder
-from clipex.experiment.variable_handler import VariableHandler
-from clipex.experiment.variable.int_var import IntVar
-from clipex.core.command_runner.simple_runner import SimpleRunner
+from clipbench.core.search_method.grid_sample import GridSearchMethod
+from clipbench.experiment.experiment import Experiment
+from clipbench.core.evaluator import Evaluator
+from clipbench.experiment.command_builder import CommandBuilder
+from clipbench.experiment.variable_handler import VariableHandler
+from clipbench.experiment.variable.int_var import IntVar
+from clipbench.core.command_runner.simple_runner import SimpleRunner
 
 
 def test_grid_sample():

@@ -1,6 +1,6 @@
 from typing import Tuple, List
 
-from clipex.experiment.variable.variable import Variable
+from clipbench.experiment.variable.variable import Variable
 
 
 class VariableHandler:

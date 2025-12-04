@@ -1,10 +1,10 @@
-from clipex.core.search_method.grid_sample import GridSearchMethod
-from clipex.core.search_method.random_sample import RandomSearchMethod
+from clipbench.core.search_method.grid_sample import GridSearchMethod
+from clipbench.core.search_method.random_sample import RandomSearchMethod
 
-from clipex.core.evaluator import Evaluator
-from clipex.core.command_runner.simple_runner import SimpleRunner
-from clipex.experiment_converter.experiment_provider import provide_experiment
-from clipex.result_viewer.result_viewer import plot_heatmap
+from clipbench.core.evaluator import Evaluator
+from clipbench.core.command_runner.simple_runner import SimpleRunner
+from clipbench.experiment_converter.experiment_provider import provide_experiment
+from clipbench.result_viewer.result_viewer import plot_heatmap
 
 
 def main():
@@ -25,7 +25,7 @@ def main():
     random.run(experiment.get_search_space_definition(), searched, evaluator, 20)
     print(searched)
 
-    plot_heatmap(searched, "./result.jpg")
+    plot_heatmap(searched, "temp/result.jpg")
 
 
 if __name__ == "__main__":

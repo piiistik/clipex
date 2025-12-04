@@ -1,5 +1,5 @@
 from typing import List
-from clipex.core.command_runner.command_runner import CommandRunner
+from clipbench.core.command_runner.command_runner import CommandRunner
 import subprocess
 import timeit
 
@@ -16,7 +16,6 @@ class SimpleRunner(CommandRunner):
         results = []
 
         for command in commands:
-            print(command)
             results.append(self.__benchmark_command(command))
 
         return results

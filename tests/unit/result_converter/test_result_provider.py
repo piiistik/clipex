@@ -1,5 +1,5 @@
 import os
-from clipex.result_converter.result_provider import provide_result
+from clipbench.result_converter.result_provider import provide_result
 
 
 def test_result_provider():

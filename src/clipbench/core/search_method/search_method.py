@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
-from clipex.core.search_space import SearchSpace, SpaceDefinition
-from clipex.core.evaluator import Evaluator
+from clipbench.core.search_space import SearchSpace, SpaceDefinition
+from clipbench.core.evaluator import Evaluator
 
 
 class SearchMethod(ABC):

@@ -1,2 +1,2 @@
-# clipex
-cli program performance explorer
+# clipbench
+cli program benchmarker

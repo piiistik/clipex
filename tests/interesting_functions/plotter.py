@@ -2,8 +2,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from typing import Callable, Tuple, Dict, Optional
 
-from src.clipex.core.search_method.random_sample import RandomSearchMethod
-from src.clipex.core.search_method.island import IslandRandomCliffSearch
+from clipbench.core.search_method.random_sample import RandomSearchMethod
+from clipbench.core.search_method.island import IslandRandomCliffSearch
 
 from interesting_functions import (
     complex_landscape_with_curved_cliff,

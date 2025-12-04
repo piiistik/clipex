@@ -1,5 +1,5 @@
 import os
-from clipex.result_viewer.result_viewer import plot_heatmap
+from clipbench.result_viewer.result_viewer import plot_heatmap
 
 
 def test_result_viewer():

@@ -1,10 +1,10 @@
-from clipex.experiment.experiment import Experiment
-from clipex.configuration.configuration import Configuration
-from clipex.core.evaluator import Evaluator
-from clipex.core.search_method.grid_sample import GridSearchMethod
-from clipex.core.command_runner.simple_runner import SimpleRunner
+from clipbench.experiment.experiment import Experiment
+from clipbench.configuration.configuration import Configuration
+from clipbench.core.evaluator import Evaluator
+from clipbench.core.search_method.grid_sample import GridSearchMethod
+from clipbench.core.command_runner.simple_runner import SimpleRunner
 
-from clipex.core.search_space import SearchSpace
+from clipbench.core.search_space import SearchSpace
 
 
 class Executor:

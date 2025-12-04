@@ -1,7 +1,7 @@
-from clipex.experiment.variable.int_var import IntVar
-from clipex.experiment.variable.float_var import FloatVar
-from clipex.experiment.variable.toggleable_string_var import ToggleableStringVar
-from clipex.experiment.variable.string_list_var import StringListVar, StringListType
+from clipbench.experiment.variable.int_var import IntVar
+from clipbench.experiment.variable.float_var import FloatVar
+from clipbench.experiment.variable.toggleable_string_var import ToggleableStringVar
+from clipbench.experiment.variable.string_list_var import StringListVar, StringListType
 
 
 def test_int_var():

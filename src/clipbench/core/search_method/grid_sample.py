@@ -1,9 +1,9 @@
 import itertools
 
-from clipex.core.search_method.search_method import SearchMethod
-from clipex.core.search_space import VariableVector, SearchSpace, SpaceDefinition
+from clipbench.core.search_method.search_method import SearchMethod
+from clipbench.core.search_space import VariableVector, SearchSpace, SpaceDefinition
 
-from clipex.core.evaluator import Evaluator
+from clipbench.core.evaluator import Evaluator
 
 
 class GridSearchMethod(SearchMethod):

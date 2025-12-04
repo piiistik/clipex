@@ -1,6 +1,6 @@
 from typing import Tuple
 
-from clipex.experiment.variable.variable import Variable
+from clipbench.experiment.variable.variable import Variable
 
 
 class IntVar(Variable):

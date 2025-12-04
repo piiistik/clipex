@@ -1,5 +1,5 @@
 import os
-from clipex.experiment_converter.experiment_provider import provide_experiment
+from clipbench.experiment_converter.experiment_provider import provide_experiment
 
 
 def test_parse_xml():

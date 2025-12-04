@@ -1,8 +1,8 @@
 from typing import List
 
-from clipex.core.search_space import VariableVector, SearchSpace
-from clipex.core.command_runner.command_runner import CommandRunner
-from clipex.experiment.experiment import Experiment
+from clipbench.core.search_space import VariableVector, SearchSpace
+from clipbench.core.command_runner.command_runner import CommandRunner
+from clipbench.experiment.experiment import Experiment
 
 
 class Evaluator:

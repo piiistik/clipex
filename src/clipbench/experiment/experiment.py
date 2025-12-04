@@ -1,7 +1,7 @@
 from typing import Tuple
 
-from clipex.experiment.command_builder import CommandBuilder
-from clipex.experiment.variable_handler import VariableHandler
+from clipbench.experiment.command_builder import CommandBuilder
+from clipbench.experiment.variable_handler import VariableHandler
 
 
 class Experiment:
