@@ -4,9 +4,9 @@ from typing import Optional
 from clipbench.core.search_method.search_method import SearchMethod
 from clipbench.core.search_space import VariableVector, SpaceDefinition, SearchSpace
 from clipbench.core.evaluator import Evaluator
+from clipbench.core.registry import register
 
-
-class RandomSearchMethod(SearchMethod):
+class RandomSample(SearchMethod):
     """
     Uniform random sampling across the integer search space.
     """
@@ -37,3 +37,7 @@ class RandomSearchMethod(SearchMethod):
             self._generator.randint(min, max) for min, max in space_definition
         )
         return vector
+
+@register("random_sample")
+def factory_random_sample(configuration: dict) -> RandomSample:
+    return RandomSample(configuration.get("random_seed", None))

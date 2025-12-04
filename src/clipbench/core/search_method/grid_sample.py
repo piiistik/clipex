@@ -4,9 +4,10 @@ from clipbench.core.search_method.search_method import SearchMethod
 from clipbench.core.search_space import VariableVector, SearchSpace, SpaceDefinition
 
 from clipbench.core.evaluator import Evaluator
+from clipbench.core.registry import register
 
 
-class GridSearchMethod(SearchMethod):
+class GridSample(SearchMethod):
     """
     Grid search across the integer search space.
     The grid resolution per variable is determined from the budget,
@@ -45,3 +46,7 @@ class GridSearchMethod(SearchMethod):
 
         grid_points = list(itertools.product(*grid_axes))
         return grid_points[:budget]
+
+@register("grid_sample")
+def factory_grid_sample(_: dict) -> GridSample:
+    return GridSample()

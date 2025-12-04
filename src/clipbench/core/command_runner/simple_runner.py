@@ -2,6 +2,7 @@ from typing import List
 from clipbench.core.command_runner.command_runner import CommandRunner
 import subprocess
 import timeit
+from clipbench.core.registry import register
 
 
 # timeit runs subprocess multiple times and returns avg time
@@ -33,3 +34,7 @@ class SimpleRunner(CommandRunner):
             )
             / self.__iterations
         )
+
+@register("simple_runner")
+def factory_simple_runner(configuration: dict) -> SimpleRunner:
+    return SimpleRunner(configuration.get("iterations", 10), configuration.get("iteration_timeout", 10))
